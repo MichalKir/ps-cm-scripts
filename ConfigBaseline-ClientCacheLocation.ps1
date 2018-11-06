@@ -1,14 +1,22 @@
-##################################
-# This is two part script, discovery script and remediation script 
-# Create configuration item -> Windows Desktops and Servers (custom) -> Windows 10 (only one tested)
-# New Setting -> Name: "W10 CM Client Cache Location" - Setting type: Script -> Data type: Boolean
-# Add copy and paste discovery\remediation scripts -> Language PowerShell
-# New Compliance Rule -> Name: "CR - W10 CM Client Cache Location" -> Value = True -> 
-# -> Check "Run the specified remediation script when this setting is noncompliant" ->
-# -> [optional] Check "Report noncompliance if this setting instance is not found" ->
-# -> [optional] Select desired "Noncompliance severity for reports"
-# Add CI to Configuration Baseline and deploy as desired, 
-# , make sure that you check "Remediate noncompliant rules when supported"
+<#
+Author:         Michal Kirejczyk
+Date:           2018-11-06
+Version:        1.0.0
+What's new:
+                1.0.0 (2018-11-06) - Script created            
+#>
+<# 
+This is two part script, discovery script and remediation script 
+Create configuration item -> Windows Desktops and Servers (custom) -> Windows 10 (only one tested)
+New Setting -> Name: "W10 CM Client Cache Location" - Setting type: Script -> Data type: Boolean
+Add copy and paste discovery\remediation scripts -> Language PowerShell
+New Compliance Rule -> Name: "CR - W10 CM Client Cache Location" -> Value = True -> 
+-> Check "Run the specified remediation script when this setting is noncompliant" ->
+-> [optional] Check "Report noncompliance if this setting instance is not found" ->
+-> [optional] Select desired "Noncompliance severity for reports"
+Add CI to Configuration Baseline and deploy as desired, 
+, make sure that you check "Remediate noncompliant rules when supported"
+#>
 
 
 ###### DISCOVERY SCRIPT ######
